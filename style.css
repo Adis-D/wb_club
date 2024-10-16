@@ -1,0 +1,261 @@
+@font-face {
+  font-family: 'Rostov'; /* Name for the font */
+  src: url('rostov.ttf') format('truetype'); /* Path to the font file */
+  font-weight: normal; /* You can specify different weights if needed */
+  font-style: normal; /* You can specify italic if needed */
+}
+
+
+html{
+    background-color: #1E1519;
+}
+
+body{
+  font-family: 'Montserrat';
+}
+
+
+.dollaBill img{
+  position: absolute;
+  top: -51%;
+  left: -20%;
+  width: 643px;
+  height: 600px;
+  opacity: 0.6;
+}
+
+
+
+
+.header{
+    margin-top: 100px;
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.iconAndText{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.moneyIcon{
+  width: 30px;
+  height: 30px;
+  margin-left: 7.5px;
+}
+
+.about-list{
+  z-index: 2;
+  font-size: 20px;
+}
+
+.personImage{
+  position: absolute;
+  bottom: -100px; /* Положение сверху */
+  right: 0%; /* Положение слева */
+  width: 700px; /* Ширина изображения */
+  height: 700px; /* Высота изображения */
+  object-fit: cover; /* Обрезка изображения для заполнения контейнера */
+  z-index: -1; /* Помещаем изображение под текст */
+}
+
+.moneyIconWrapper{
+  margin-right: 15px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 10%;
+  background-color: #FD11DA; 
+}
+
+
+
+
+
+.button{
+    background-color: #EFBF87;
+    width: 500px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+
+.about_section {
+  margin-top: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; /* Центрируем вертикально */
+}
+
+.button-cont {
+  width: 50%;
+}
+
+.about_info {
+  margin-bottom: 100px;
+  display: flex;
+  align-items: flex-start; /* Выравниваем по левому краю */
+}
+
+.about-list {
+  list-style-type: '-'; /* Тип буллета */
+  margin: 0; /* Убираем отступы у списка */
+  padding: 0; /* Убираем отступы у списка */
+  color: white; /* Цвет текста */
+}
+
+.about-list li {
+  padding: 5px 0; /* Отступы для пунктов списка */
+}
+
+.wrapper {
+    width: 90%;
+    background-color: #FD11DA;
+    max-width: 1536px;
+    margin-inline: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    overflow: hidden;
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0)
+    );
+  }
+  
+  @keyframes scrollLeft {
+    to {
+      left: -350px;
+    }
+  }
+  
+  .item {
+    top: 1%;
+    font-size: 22px;
+    width: 350px;
+    height: 100px;
+    color: white;
+    border-radius: 6px;
+    position: absolute;
+    left: max(calc(350px * 8), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  .item1 {
+    animation-delay: calc(25s / 8 * (8 - 1) * -1);
+  }
+  
+  .item2 {
+    animation-delay: calc(25s / 8 * (8 - 2) * -1);
+  }
+  
+  .item3 {
+    animation-delay: calc(25s / 8 * (8 - 3) * -1);
+  }
+  
+  .item4 {
+    animation-delay: calc(25s / 8 * (8 - 4) * -1);
+  }
+  
+  .item5 {
+    animation-delay: calc(25s / 8 * (8 - 5) * -1);
+  }
+  
+  .item6 {
+    animation-delay: calc(25s / 8 * (8 - 6) * -1);
+  }
+  
+  .item7 {
+    animation-delay: calc(25s / 8 * (8 - 7) * -1);
+  }
+  
+  .item8 {
+    animation-delay: calc(25s / 8 * (8 - 8) * -1);
+  }
+
+
+
+.accordion-wrapper{
+  width: calc(100vw -3px);
+  display: flex;
+  justify-content: center
+}
+
+.accordion{
+  padding-left: 5%;
+  padding-right: 5%}
+
+
+.accordion li{
+  color: white;
+  list-style: none;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* border-radius: 8px; */
+  background-color: #1E1519;
+  border-bottom:white 1px solid;
+  border-top: white 1px solid;
+  /* box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7); */
+}
+
+.accordion li label {
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+label::before {
+  color: white;
+  content: '+';
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+input[type='radio']{
+  display: none;
+}
+
+.accordion .content{
+  color: white;
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+
+
+.accordion input[type='radio']:checked + label + .content{
+  max-height: 400px;
+  padding: 10px 10px 10px;
+}
+
+
+.accordion input[type='radio']:checked + label::before{
+  content: '-';
+}
