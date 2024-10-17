@@ -260,11 +260,19 @@ input[type='radio']{
   content: '-';
 }
 
-
+.Qa h1{
+  font-size: 65px;
+}
 
 
 @media (max-width: 1200px) {
-  
+  .Qa h1{
+    font-size: 50px;
+  }
+  .header{
+    margin-top: 50px;
+}
+
   .dollaBill img{
     display: none;
   }
@@ -293,5 +301,9 @@ input[type='radio']{
   .header_text{
     font-size: 40px;
   }
+
+
+
+  
 
 }
