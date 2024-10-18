@@ -370,7 +370,7 @@ input[type='radio']{
    .personImage1{
     display: block;
     position: absolute;
-    width: 429px;
+    /* width: 429px; */
     height: 650px;
     z-index: 1;
     right: calc(-429px/3);
