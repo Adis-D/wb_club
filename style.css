@@ -10,10 +10,11 @@ html{
     background-color: #1E1519;
 }
 
-body{
+html,body{
   font-family: 'Montserrat';
   overflow-x: hidden;
 }
+
 
 
 .dollaBill img{
@@ -26,6 +27,8 @@ body{
 }
 
 .header{
+    /* overflow-x: hidden; */
+    /* overflow-y: visible; */
     margin-top: 100px;
     color: white;
     padding-left: 5%;
@@ -290,12 +293,15 @@ input[type='radio']{
 
 .button-cont1{
   display: none;
+  overflow: visible;
 }
 
 
 
 @media (max-width: 1200px) {
 
+
+  
   .button-cont1{
     display: block;
     margin-top: -90px;
@@ -368,13 +374,16 @@ input[type='radio']{
     height: 650px;
     z-index: 1;
     right: calc(-429px/3);
+    max-width: 97vw;
     top: -75px;
    } 
   
   .about_section {
+    overflow: visible;
     margin-top: 30px;
     padding-left: 5%;
     padding-right: 5%;
+    /* overflow-x: hidden; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -404,6 +413,5 @@ input[type='radio']{
     border-radius: 10%;
     background-color: #FD11DA; 
   }
-  
 
 }
