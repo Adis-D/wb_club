@@ -305,17 +305,19 @@ input[type='radio']{
   
   .button-cont1{
     display: block;
+    overflow: visible;
     margin-top: -90px;
     margin-bottom: 50px;
-    margin-left: 5%;
-    margin-right: 5%;
   }
 
   .button1{
+    overflow: visible;
     background: linear-gradient(90deg, rgba(157,126,89,1) 0%, rgba(239,191,135,1) 62%, rgba(157,126,89,1) 100%);
-    width: 100vw;
+    /* width: 100vw; */
+    width: 90vw;
     height: 115px;
     border-radius: 20px;
+    border: 0px;
 }
 
 
@@ -378,15 +380,14 @@ input[type='radio']{
     height: 650px;
     z-index: 1;
     right: calc(-429px/3);
-    top: -75px;
+    top: -70px;
    } 
   
   .about_section {
-    overflow: visible;
+    overflow-x: visible;
     margin-top: 30px;
     padding-left: 5%;
     padding-right: 5%;
-    /* overflow-x: hidden; */
     display: flex;
     flex-direction: column;
     align-items: center;
