@@ -27,6 +27,7 @@ html,body{
 }
 
 .header{
+    /* width: 100vw; */
     /* overflow-x: hidden; */
     /* overflow-y: visible; */
     margin-top: 100px;
@@ -365,6 +366,7 @@ input[type='radio']{
   .header{
     position: relative;
     z-index: -11;
+    padding-right: 0%;
   }
 
    .personImage1{
