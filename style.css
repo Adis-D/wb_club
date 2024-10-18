@@ -371,6 +371,7 @@ input[type='radio']{
     display: block;
     position: absolute;
     /* width: 429px; */
+    width: auto;
     height: 650px;
     z-index: 1;
     right: calc(-429px/3);
