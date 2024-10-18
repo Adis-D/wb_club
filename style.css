@@ -374,7 +374,6 @@ input[type='radio']{
     height: 650px;
     z-index: 1;
     right: calc(-429px/3);
-    max-width: 97vw;
     top: -75px;
    } 
   
