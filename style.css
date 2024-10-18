@@ -12,6 +12,7 @@ html{
 
 body{
   font-family: 'Montserrat';
+  overflow-x: hidden;
 }
 
 
@@ -265,9 +266,55 @@ input[type='radio']{
 }
 
 
+.course_info :nth-child(1){
+  font-size: x-large;
+}
+
+
+
+.textBlock p {
+  font-size: large;
+}
+
+
+.header_bottom_text{
+  font-size: 35px;
+  letter-spacing: 1.5px;
+}
+
+
+.about-list :nth-child(1){
+  font-size: 60px;
+}
+
+
 @media (max-width: 1200px) {
+.about-list{
+    margin-top: 90px;
+    font-size: 15px;
+  }
+  
+.about-list :nth-child(1){
+  font-size: 30px;
+}
+
+  .header_bottom_text{
+    margin-top: 4px;
+    font-size: 25px;
+  }
+
+
+  .textBlock p{
+    font-size: large;
+  }
+  
+
+  .course_info :nth-child(1){
+    font-size: large;
+  }
+  
   .Qa h1{
-    font-size: 50px;
+    font-size: 40px;
   }
   .header{
     margin-top: 50px;
@@ -283,9 +330,10 @@ input[type='radio']{
 
 
    .personImage{
-    width: 10px;
-    height: 10px;
-    left: -100px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    z-index: 10;
    } 
   
   .about_section {
@@ -299,11 +347,28 @@ input[type='radio']{
   }
 
   .header_text{
-    font-size: 40px;
+    font-size: 35px;
+    margin-top: 30px
   }
 
 
+  .moneyIcon{
+    width: 30px;
+    height: 30px;
+    margin-left: 2.5px;
+  }
 
+
+  .moneyIconWrapper{
+    margin-right: 15px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 10%;
+    background-color: #FD11DA; 
+  }
   
 
 }
