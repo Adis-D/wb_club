@@ -366,6 +366,7 @@ input[type='radio']{
   .header{
     position: relative;
     z-index: -11;
+    margin-right: 0px;
     padding-right: 0%;
   }
 
@@ -414,6 +415,14 @@ input[type='radio']{
     height: 35px;
     border-radius: 10%;
     background-color: #FD11DA; 
+  }
+
+
+
+
+
+  body{
+    margin-right: 0px;
   }
 
 }
