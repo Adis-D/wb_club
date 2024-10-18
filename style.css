@@ -288,7 +288,31 @@ input[type='radio']{
 }
 
 
+.button-cont1{
+  display: none;
+}
+
+
+
 @media (max-width: 1200px) {
+
+  .button-cont1{
+    display: block;
+    margin-top: -90px;
+    margin-bottom: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .button1{
+    background: linear-gradient(90deg, rgba(157,126,89,1) 0%, rgba(239,191,135,1) 62%, rgba(157,126,89,1) 100%);
+    width: 100vw;
+    height: 115px;
+    border-radius: 20px;
+}
+
+
+
 .about-list{
     margin-top: 90px;
     font-size: 15px;
@@ -306,6 +330,7 @@ input[type='radio']{
 
   .textBlock p{
     font-size: large;
+    z-index: -11;
   }
   
 
@@ -328,12 +353,22 @@ input[type='radio']{
     display: none;
   }
 
+  .personImage{
+    display: none;
+  }
+  .header{
+    position: relative;
+    z-index: -11;
+  }
 
-   .personImage{
+   .personImage1{
     display: block;
-    width: 100px;
-    height: 100px;
-    z-index: 10;
+    position: absolute;
+    width: 429px;
+    height: 650px;
+    z-index: 1;
+    right: calc(-429px/3);
+    top: -75px;
    } 
   
   .about_section {
